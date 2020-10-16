@@ -1,0 +1,41 @@
+{
+  "name": "react-tiny-popover",
+  "version": "4.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexkatz/react-tiny-popover.git"
+  },
+  "main": "dist/Popover.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "popover",
+    "react-popover",
+    "popout",
+    "pop",
+    "out"
+  ],
+  "license": "MIT",
+  "author": "Alex Katz",
+  "description": "A simple and highly customizable popover react higher order component with no other dependencies! Typescript friendly.",
+  "scripts": {
+    "build": "tsc -p . && yarn copy-types",
+    "watch": "tsc-watch -p . --onSuccess 'yarn copy-types'",
+    "copy-types": "cp src/index.d.ts dist/index.d.ts",
+    "start-demo": "cd docs && yarn start"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "tsc-watch": "^4.0.0",
+    "tslint": "^5.18.0",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.7.2"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
